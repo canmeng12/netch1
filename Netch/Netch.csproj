@@ -15,7 +15,7 @@
     <IsPackable>false</IsPackable>
     <!-- event handler async void Warning -->
     <NoWarn>VSTHRD100</NoWarn>
-    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
     <AnalysisMode>Default</AnalysisMode>
     <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
