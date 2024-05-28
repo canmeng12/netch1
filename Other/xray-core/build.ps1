@@ -1,6 +1,6 @@
 Set-Location (Split-Path $MyInvocation.MyCommand.Path -Parent)
 
-git clone https://github.com/xtls/xray-core -b 'v1.5.6' src
+git clone https://github.com/xtls/xray-core -b 'v1.8.13' src
 if ( -Not $? ) {
     exit $lastExitCode
 }
