@@ -1,5 +1,9 @@
 name: Netch Build CI
-on: [push, pull_request]
+on:
+  watch:
+    types: started
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
