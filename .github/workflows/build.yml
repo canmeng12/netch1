@@ -83,9 +83,6 @@ jobs:
       - name: Build
         shell: pwsh
         run: |
-          rustc-version
-          cargo-version
-          rustup-version
           .\build.ps1 -Configuration Release -OutputPath release
 
       - name: Upload
