@@ -61,11 +61,10 @@ if ( -Not ( Test-Path ".\Netch\bin\$Configuration" ) ) {
 		-r 'win-x64' `
 		-p:Platform='x64' `
 		-p:SelfContained=$SelfContained `
-		-p:PublishTrimmed=$PublishReadyToRun `
-		-p:PublishSingleFile=$PublishSingleFile `
-		-p:PublishReadyToRun=$PublishReadyToRun `
-		-p:PublishReadyToRunShowWarnings=$PublishReadyToRun `
+		-p:PublishReadyToRun=true `
+		-p:PublishReadyToRunShowWarnings=true `
 		-p:IncludeNativeLibrariesForSelfExtract=$SelfContained `
+		--self-contained false `
 		-o ".\Netch\bin\$Configuration" `
 		'.\Netch\Netch.csproj'
 	if ( -Not $? ) { exit $lastExitCode }

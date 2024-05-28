@@ -1,6 +1,6 @@
 Set-Location (Split-Path $MyInvocation.MyCommand.Path -Parent)
 
-git clone https://github.com/cbeuw/Cloak -b 'v2.5.5' src
+git clone https://github.com/cbeuw/Cloak -b 'v2.9.0' src
 if ( -Not $? ) {
     exit $lastExitCode
 }
