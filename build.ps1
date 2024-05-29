@@ -60,10 +60,10 @@ if ( -Not ( Test-Path ".\Netch\bin\$Configuration" ) ) {
 		-c $Configuration `
 		-r 'win-x64' `
 		-p:Platform='x64' `
-		-p:SelfContained=$SelfContained `
+		-p:SelfContained=false `
 		-p:PublishReadyToRun=true `
 		-p:PublishReadyToRunShowWarnings=true `
-		-p:IncludeNativeLibrariesForSelfExtract=$SelfContained `
+		-p:IncludeNativeLibrariesForSelfExtract=false `
 		--self-contained false `
 		-o ".\Netch\bin\$Configuration" `
 		'.\Netch\Netch.csproj'
