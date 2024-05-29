@@ -11,5 +11,5 @@ $Env:GOROOT_FINAL='/usr'
 
 $Env:GOOS='windows'
 $Env:GOARCH='amd64'
-go build -a -trimpath -asmflags '-s -w' -ldflags '-s -w' -o '..\release\tun2socks.bin'
+go build -a -trimpath -asmflags '-s -w' -ldflags '-s -w -buildid=' -o '..\..\release\tun2socks.bin' '.\main'
 exit $lastExitCode
